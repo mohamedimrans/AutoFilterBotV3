@@ -28,11 +28,7 @@ Bot Owner Only
 """
 
 ABOUT = """
-➥ Name :  Pocket Movies Robot
-    
-➥ Owner : [◎ ᴍ⟳ʜ ᴀ ᴍ ᴇ ᴅ ➟ ɪ ᴍ ʀ ᴀ ɴ ◎](
-https://t.me/Mhd_Imrann)
+**➥ Name :  Pocket Movies Robot
 
-➥ Created By : [MSP Bots](
-https://t.me/MSPbots)
+➥ Owner : <a href='https://t.me/Mhd_Imrann'>◎ ᴍ⟳ʜ ᴀ ᴍ ᴇ ᴅ ➟ ɪ ᴍ ʀ ᴀ ɴ ◎</a>**
 """
