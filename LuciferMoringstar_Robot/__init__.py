@@ -28,14 +28,11 @@ Bot Owner Only
 """
 
 ABOUT = """
-➥ Name :  Auto Filter V3
+➥ Name :  Pocket Movies Robot
     
-➥ Creator : [Naughty PROFESSOR](
-https://youtube.com/c/NaughtyPROFESSOR)
+➥ Owner : [◎ ᴍ⟳ʜ ᴀ ᴍ ᴇ ᴅ ➟ ɪ ᴍ ʀ ᴀ ɴ ◎](
+https://t.me/Mhd_Imrann)
 
-➥ Language : Python3
-
-➥ Library : Pyrogram Asyncio 1.13.0
-
-➥ Tutorial : [Click Me](https://youtu.be/5hnYOKBzyi8)
+➥ Created By : [MSP Bots](
+https://t.me/MSPbots)
 """
