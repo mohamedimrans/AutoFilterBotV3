@@ -112,7 +112,7 @@ async def start(bot, message):
         await message.reply_text(
              await message.reply_photo(
             photo=random.choice(PICS),
-            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+            caption=script.START_MSG.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=InlineKeyboardMarkup(
                 [[
                 InlineKeyboardButton("Search Here", switch_inline_query_current_chat='')
