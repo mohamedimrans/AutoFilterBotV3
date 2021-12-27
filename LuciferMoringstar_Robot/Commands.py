@@ -120,7 +120,6 @@ async def start(bot, message):
                 InlineKeyboardButton("Help", callback_data="help"),
                 InlineKeyboardButton("About", callback_data="about")
                 ]]
-            parse_mode='html'
             )
         )
         StopPropagation
