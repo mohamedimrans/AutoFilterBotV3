@@ -110,10 +110,9 @@ async def start(bot, message):
         )
     else:
         await message.reply_text(
-            START_MSG,
-            photo=PICS
-            parse_mode="Markdown",
-            disable_web_page_preview=True,
+             await message.reply_photo(
+            photo=random.choice(PICS),
+            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=InlineKeyboardMarkup(
                 [[
                 InlineKeyboardButton("Search Here", switch_inline_query_current_chat='')
@@ -121,6 +120,7 @@ async def start(bot, message):
                 InlineKeyboardButton("Help", callback_data="help"),
                 InlineKeyboardButton("About", callback_data="about")
                 ]]
+            parse_mode='html'
             )
         )
         StopPropagation
