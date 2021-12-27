@@ -121,8 +121,8 @@ async def start(bot, message):
                 ]]
             )
         )
-        return
-
+        StopPropagation
+        
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
 async def channel_info(bot, message):
     """Send basic information of channel"""
