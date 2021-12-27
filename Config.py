@@ -35,6 +35,7 @@ DATABASE_NAME = environ['BOT_NAME']
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Messages
+PICS = "https://telegra.ph/file/618b977cdb0df86922f24.jpg"
 default_start_msg = """
 **Hi, I'm Auto Filter V3**
 
