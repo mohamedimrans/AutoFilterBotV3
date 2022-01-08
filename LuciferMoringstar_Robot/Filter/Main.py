@@ -54,14 +54,14 @@ async def filter(client, message):
         btn = []
         search = message.text
         mo_tech_yt = f"**🗂️ Title:** {search}\n**⭐ Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n**📤 Upload by :- @PocketMoviesOfficial**"
+        btn.append(
+            [InlineKeyboardButton('JOIN OUR CHANNEL', url=f'{TRIAL2}')]
+            )
         files = await get_filter_results(query=search)
         if files:
             for file in files:
                 file_id = file.file_id
                 filename = f"[{get_size(file.file_size)}] {file.file_name}"
-                btn.append(
-                    [InlineKeyboardButton('JOIN OUR CHANNEL', url=f'{TRIAL2}')]
-                    )
                 btn.append(
                     [InlineKeyboardButton(text=f"{filename}",callback_data=f"pr0fess0r_99#{file_id}")]
                     )
