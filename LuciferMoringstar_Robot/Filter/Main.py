@@ -1,5 +1,5 @@
 # (c) PR0FESS0R-99
-from Config import AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, API_KEY, AUTH_GROUPS, TUTORIAL, TUTORIAL2, TRIAL
+from Config import AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, API_KEY, AUTH_GROUPS, TUTORIAL, TUTORIAL2, TRIAL1, TRIAL2
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters
 import re
@@ -84,6 +84,7 @@ async def filter(client, message):
             buttons.append(
                 [InlineKeyboardButton(text="📃 Pages 1/1",callback_data="pages")]
             )
+            
             poster=None
             if API_KEY:
                 poster=await get_poster(search)
@@ -104,7 +105,7 @@ async def filter(client, message):
             [InlineKeyboardButton(text=f"📃 Pages 1/{data['total']}",callback_data="pages")]
         )
         buttons.append(
-            [InlineKeyboardButton('HOW TO DOWNLOAD', url=f'{TRIAL}')]
+            [InlineKeyboardButton('⚠️How To I Download⚠️', url=f'{TRIAL1}')]
         )
         poster=None
         if API_KEY:
@@ -153,7 +154,7 @@ async def group(client, message):
                 [InlineKeyboardButton(text="📃 Pages 1/1",callback_data="pages")]
             )
             buttons.append(
-            [InlineKeyboardButton('HOW TO DOWNLOAD', url=f'{TRIAL}')]
+            [InlineKeyboardButton('⚠️How To I Download⚠️', url=f'{TRIAL1}')]
             )
             poster=None
             if API_KEY:
@@ -174,7 +175,7 @@ async def group(client, message):
             [InlineKeyboardButton(text=f"📃 Pages 1/{data['total']}",callback_data="pages")]
         )
         buttons.append(
-            [InlineKeyboardButton('HOW TO DOWNLOAD', url=f'{TRIAL}')]
+            [InlineKeyboardButton('⚠️How To I Download⚠️', url=f'{TRIAL1}')]
         )
         poster=None
         if API_KEY:
@@ -230,7 +231,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     [InlineKeyboardButton(f"📃 Pages {int(index)+2}/{data['total']}", callback_data="pages")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton('HOW TO DOWNLOAD', url=f'{TRIAL}')]
+                    [InlineKeyboardButton('⚠️How To I Download⚠️', url=f'{TRIAL1}')]
                 )
                 
                 await query.edit_message_reply_markup( 
@@ -247,7 +248,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     [InlineKeyboardButton(f"📃 Pages {int(index)+2}/{data['total']}", callback_data="pages")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton('HOW TO DOWNLOAD', url=f'{TRIAL}')]
+                    [InlineKeyboardButton('⚠️How To I Download⚠️', url=f'{TRIAL1}')]
                 )
 
                 await query.edit_message_reply_markup( 
@@ -274,7 +275,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     [InlineKeyboardButton(f"📃 Pages {int(index)}/{data['total']}", callback_data="pages")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton('HOW TO DOWNLOAD', url=f'{TRIAL}')]
+                    [InlineKeyboardButton('⚠️How To I Download⚠️', url=f'{TRIAL1}')]
                 )
 
                 await query.edit_message_reply_markup( 
@@ -291,7 +292,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     [InlineKeyboardButton(f"📃 Pages {int(index)}/{data['total']}", callback_data="pages")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton('HOW TO DOWNLOAD', url=f'{TRIAL}')]
+                    [InlineKeyboardButton('⚠️How To I Download⚠️', url=f'{TRIAL1}')]
                 )
                 await query.edit_message_reply_markup( 
                     reply_markup=InlineKeyboardMarkup(buttons)
@@ -300,7 +301,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "help":
             buttons = [
                 [
-                    InlineKeyboardButton('HOW TO DOWNLOAD', url=f'{TRIAL}')
+                    InlineKeyboardButton('⚠️How To I Download⚠️', url=f'{TRIAL1}')
                 ]
                 ]
             await query.message.edit(text=f"{HELP}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
@@ -308,7 +309,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('HOW TO DOWNLOAD', url=f'{TRIAL}')
+                    InlineKeyboardButton('⚠️How To I Download⚠️', url=f'{TRIAL1}')
                 ]
                 ]
             await query.message.edit(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
