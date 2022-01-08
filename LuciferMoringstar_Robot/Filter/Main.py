@@ -60,6 +60,9 @@ async def filter(client, message):
                 file_id = file.file_id
                 filename = f"[{get_size(file.file_size)}] {file.file_name}"
                 btn.append(
+                    [InlineKeyboardButton('JOIN OUR CHANNEL', url=f'{TRIAL2}')]
+                    )
+                btn.append(
                     [InlineKeyboardButton(text=f"{filename}",callback_data=f"pr0fess0r_99#{file_id}")]
                     )
         else:
