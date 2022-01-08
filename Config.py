@@ -30,6 +30,7 @@ AUTH_GROUPS = [int(admin) for admin in environ.get("AUTH_GROUPS", "").split()]
 TUTORIAL = "https://t.me/PocketMoviesOfficial"
 TUTORIAL2 = "https://t.me/+eo_4Rvk0YQc4Njll"
 TRIAL = "https://t.me/Get_Movies_Here2/2"
+TRIAL2 = "https://t.me/PocketMoviesOfficial"
 # MongoDB information
 DATABASE_URI = environ['DATABASE_2']
 DATABASE_NAME = environ['BOT_NAME']
