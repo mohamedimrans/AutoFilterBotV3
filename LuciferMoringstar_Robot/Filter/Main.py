@@ -87,6 +87,9 @@ async def filter(client, message):
             buttons.append(
                 [InlineKeyboardButton('⚠️How To I Download⚠️', url=f'{TRIAL1}')]
             )
+            buttons.append(
+                [InlineKeyboardButton('⚡ Join For New Movies ⚡', url=f'{TRIAL3}')]
+            )
             
             poster=None
             if API_KEY:
@@ -109,6 +112,9 @@ async def filter(client, message):
         )
         buttons.append(
             [InlineKeyboardButton('⚠️How To I Download⚠️', url=f'{TRIAL1}')]
+        )
+        buttons.append(
+            [InlineKeyboardButton('⚡ Join For New Movies ⚡', url=f'{TRIAL3}')]
         )
         poster=None
         if API_KEY:
@@ -162,6 +168,9 @@ async def group(client, message):
             buttons.append(
             [InlineKeyboardButton('⚠️How To I Download⚠️', url=f'{TRIAL1}')]
             )
+            buttons.append(
+            [InlineKeyboardButton('⚡ Join For New Movies ⚡', url=f'{TRIAL3}')]
+            )
             poster=None
             if API_KEY:
                 poster=await get_poster(search)
@@ -182,6 +191,9 @@ async def group(client, message):
         )
         buttons.append(
             [InlineKeyboardButton('⚠️How To I Download⚠️', url=f'{TRIAL1}')]
+        )
+        buttons.append(
+            [InlineKeyboardButton('⚡ Join For New Movies ⚡', url=f'{TRIAL3}')]
         )
         poster=None
         if API_KEY:
@@ -239,7 +251,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons.append(
                     [InlineKeyboardButton('⚠️How To I Download⚠️', url=f'{TRIAL1}')]
                 )
-                
+                buttons.append(
+                    [InlineKeyboardButton('⚡ Join For New Movies ⚡', url=f'{TRIAL3}')]
+                )
+
                 await query.edit_message_reply_markup( 
                     reply_markup=InlineKeyboardMarkup(buttons)
                 )
@@ -256,7 +271,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons.append(
                     [InlineKeyboardButton('⚠️How To I Download⚠️', url=f'{TRIAL1}')]
                 )
-
+                buttons.append(
+                    [InlineKeyboardButton('⚡ Join For New Movies ⚡', url=f'{TRIAL3}')]
+                )
                 await query.edit_message_reply_markup( 
                     reply_markup=InlineKeyboardMarkup(buttons)
                 )
@@ -283,6 +300,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons.append(
                     [InlineKeyboardButton('⚠️How To I Download⚠️', url=f'{TRIAL1}')]
                 )
+                buttons.append(
+                    [InlineKeyboardButton('⚡ Join For New Movies ⚡', url=f'{TRIAL3}')]
+                )
 
                 await query.edit_message_reply_markup( 
                     reply_markup=InlineKeyboardMarkup(buttons)
@@ -300,6 +320,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons.append(
                     [InlineKeyboardButton('⚠️How To I Download⚠️', url=f'{TRIAL1}')]
                 )
+                buttons.append(
+                    [InlineKeyboardButton('⚡ Join For New Movies ⚡', url=f'{TRIAL3}')]
+                )
                 await query.edit_message_reply_markup( 
                     reply_markup=InlineKeyboardMarkup(buttons)
                 )
@@ -309,6 +332,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 [
                     InlineKeyboardButton('⚠️How To I Download⚠️', url=f'{TRIAL1}')
                 ]
+                
+                [   
+                    InlineKeyboardButton('⚡ Join For New Movies ⚡', url=f'{TRIAL3}')
+                ]
+                
                 ]
             await query.message.edit(text=f"{HELP}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
@@ -316,6 +344,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             buttons = [
                 [
                     InlineKeyboardButton('⚠️How To I Download⚠️', url=f'{TRIAL1}')
+                ]
+                [   
+                    InlineKeyboardButton('⚡ Join For New Movies ⚡', url=f'{TRIAL3}')
                 ]
                 ]
             await query.message.edit(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
