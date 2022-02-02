@@ -332,12 +332,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 [
                     InlineKeyboardButton('⚠️How To I Download⚠️', url=f'{TRIAL1}')
                 ]
-                
-                [   
-                    InlineKeyboardButton('⚡ Join For New Movies ⚡', url=f'{TRIAL3}')
                 ]
-                
-                ]
+                buttons.append(
+                    [InlineKeyboardButton('⚡ Join For New Movies ⚡', url=f'{TRIAL3}')]
+                )
             await query.message.edit(text=f"{HELP}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
         elif query.data == "about":
@@ -345,10 +343,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 [
                     InlineKeyboardButton('⚠️How To I Download⚠️', url=f'{TRIAL1}')
                 ]
-                [   
-                    InlineKeyboardButton('⚡ Join For New Movies ⚡', url=f'{TRIAL3}')
                 ]
-                ]
+                buttons.append(
+                    [InlineKeyboardButton('⚡ Join For New Movies ⚡', url=f'{TRIAL3}')]
+                )
             await query.message.edit(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
