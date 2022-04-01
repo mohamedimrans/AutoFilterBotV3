@@ -49,10 +49,10 @@ async def start(bot, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("📢 Join Updates Channel 📢", url=invite_link.invite_link)
+                                InlineKeyboardButton("📢 Join Our Channel இந்த சேனலில் சேர்ந்தால் மட்டும் தான் இந்த Bot Work ஆகும் 📢", url=invite_link.invite_link)
                             ],
                             [
-                                InlineKeyboardButton("🔄 Try Again", callback_data=f"checksub#{file_id}")
+                                InlineKeyboardButton("🔄 மேலுள்ள சேனலில் சேர்ந்து விட்டு பிறகு Try Again கிளிக் செய்யவும்", callback_data=f"checksub#{file_id}")
                             ]
                         ]
                     ),
